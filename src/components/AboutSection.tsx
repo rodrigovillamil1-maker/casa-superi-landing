@@ -11,7 +11,6 @@ const AboutSection = () => {
     <section id="about" className="py-24 md:py-36 bg-background">
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -22,7 +21,7 @@ const AboutSection = () => {
             </p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
               DONDE CADA PIEZA<br />
-              <span className="font-accent italic text-primary">cuenta una historia</span>
+              <span className="font-accent italic text-primary normal-case">cuenta una historia</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>
@@ -42,7 +41,6 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

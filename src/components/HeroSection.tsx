@@ -4,7 +4,6 @@ import heroImage from "@/assets/hero-showroom.jpg";
 const HeroSection = () => {
   return (
     <section id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -13,10 +12,9 @@ const HeroSection = () => {
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-deep-charcoal/50" />
+        <div className="absolute inset-0 bg-deep-charcoal/60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -33,10 +31,10 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <p className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-cream-light/80 mb-2">
+          <p className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-cream-light/70 mb-2">
             Buenos Aires
           </p>
-          <div className="w-16 h-px bg-primary mx-auto my-6" />
+          <div className="w-16 h-px bg-cream-light/30 mx-auto my-6" />
           <p className="font-accent text-xl md:text-2xl italic text-cream-light/90 max-w-xl">
             Piezas únicas con historia, curadas con pasión
           </p>

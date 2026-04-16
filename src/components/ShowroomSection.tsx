@@ -10,7 +10,6 @@ const ShowroomSection = () => {
     <section id="showroom" className="py-24 md:py-36 bg-background">
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Image first on desktop */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -29,7 +28,6 @@ const ShowroomSection = () => {
             </div>
           </motion.div>
 
-          {/* Text */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -41,7 +39,7 @@ const ShowroomSection = () => {
             </p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
               TU PRÓXIMA<br />
-              <span className="font-accent italic text-primary">producción</span>
+              <span className="font-accent italic text-primary normal-case">producción</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>
@@ -75,7 +73,7 @@ const ShowroomSection = () => {
               href="https://www.instagram.com/casa.superi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-10 px-8 py-3 bg-primary text-primary-foreground font-body text-sm tracking-widest uppercase hover:bg-gold-glow transition-colors duration-300"
+              className="inline-block mt-10 px-8 py-3 bg-primary text-primary-foreground font-body text-sm tracking-widest uppercase hover:bg-olive-light transition-colors duration-300"
             >
               Consultá disponibilidad
             </a>
