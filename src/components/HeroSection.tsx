@@ -1,13 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
-import heroImage from "@/assets/hero-showroom.jpg";
-import real1 from "@/assets/real-1.jpeg";
+import heroSillon from "@/assets/hero-sillon.jpeg";
 import realHallway from "@/assets/real-hallway.jpeg";
+import realGrid from "@/assets/real-grid.jpeg";
 
 const slides = [
-  { src: heroImage, alt: "Showroom Casa Superi con muebles vintage curados" },
-  { src: real1, alt: "Sillones rosados mid-century en Casa Superi" },
+  { src: heroSillon, alt: "Sillón vintage con tapizado geométrico en Casa Superi" },
   { src: realHallway, alt: "Pasillo de la antigua caballeriza restaurada" },
+  { src: realGrid, alt: "Ambientes curados del showroom Casa Superi" },
 ];
 
 const HeroSection = () => {
