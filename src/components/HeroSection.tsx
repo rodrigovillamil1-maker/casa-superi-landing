@@ -23,7 +23,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-light tracking-wider text-cream-light mb-6">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl tracking-wider text-cream-light mb-6">
             CASA SUPERI
           </h1>
         </motion.div>
@@ -37,7 +37,7 @@ const HeroSection = () => {
             Buenos Aires
           </p>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
-          <p className="font-display text-xl md:text-2xl italic text-cream-light/90 max-w-xl">
+          <p className="font-accent text-xl md:text-2xl italic text-cream-light/90 max-w-xl">
             Piezas únicas con historia, curadas con pasión
           </p>
         </motion.div>

@@ -17,8 +17,8 @@ const ContactSection = () => {
           <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
             Visitanos
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-cream-light">
-            Vení a <span className="italic text-primary">conocernos</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream-light">
+            VENÍ A <span className="font-accent italic text-primary">conocernos</span>
           </h2>
         </motion.div>
 

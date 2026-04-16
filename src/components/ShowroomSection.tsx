@@ -39,9 +39,9 @@ const ShowroomSection = () => {
             <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
               Locación
             </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-8">
-              Tu próxima<br />
-              <span className="italic text-primary">producción</span>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
+              TU PRÓXIMA<br />
+              <span className="font-accent italic text-primary">producción</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>

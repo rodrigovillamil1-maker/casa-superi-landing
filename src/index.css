@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -46,7 +46,8 @@
     --cream-light: 42 40% 97%;
     --gold-glow: 38 80% 55%;
 
-    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Bebas Neue', 'Impact', sans-serif;
+    --font-accent: 'Playfair Display', Georgia, serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
@@ -72,6 +73,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
   }
 }
 

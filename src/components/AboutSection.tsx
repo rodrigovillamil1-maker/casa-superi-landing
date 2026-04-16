@@ -20,9 +20,9 @@ const AboutSection = () => {
             <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
               Nuestra historia
             </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-8">
-              Donde cada pieza<br />
-              <span className="italic text-primary">cuenta una historia</span>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
+              DONDE CADA PIEZA<br />
+              <span className="font-accent italic text-primary">cuenta una historia</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>
@@ -58,7 +58,7 @@ const AboutSection = () => {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-primary px-6 py-4">
-              <p className="font-display text-lg text-primary-foreground italic">
+              <p className="font-accent text-lg text-primary-foreground italic">
                 Una antigua caballeriza,<br />un nuevo destino.
               </p>
             </div>
