@@ -3,7 +3,7 @@ import { useRef } from "react";
 import realGrid from "@/assets/real-grid.jpeg";
 import showroomShooting from "@/assets/showroom-shooting.jpg";
 import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
+import ambientacionWassily from "@/assets/ambientacion-wassily.jpeg";
 
 const projects = [
   {
@@ -31,7 +31,7 @@ const projects = [
     title: "Ambientaciones",
     subtitle: "Espacios con alma",
     description: "Diseñamos escenas que cuentan historias — del living clásico al rincón bohemio, cada ambiente tiene personalidad propia.",
-    image: portfolio3,
+    image: ambientacionWassily,
     tags: ["Diseño", "Ambientación", "Estilo"],
   },
 ];
