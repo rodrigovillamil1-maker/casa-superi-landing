@@ -1,7 +1,7 @@
 const Footer = () => (
   <footer className="bg-deep-charcoal border-t border-cream-light/10 py-10">
     <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p className="font-display text-lg tracking-wider text-cream-light/60">
+      <p className="font-logo text-lg tracking-wider text-cream-light/60 font-semibold uppercase">
         CASA SUPERI
       </p>
       <p className="font-body text-xs text-cream-light/40 tracking-wider">
