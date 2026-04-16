@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Cormorant Garamond", "Georgia", "serif"],
+        display: ["Bebas Neue", "Impact", "sans-serif"],
+        accent: ["Playfair Display", "Georgia", "serif"],
         body: ["DM Sans", "system-ui", "sans-serif"],
       },
       colors: {
