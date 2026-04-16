@@ -66,7 +66,7 @@ const ContactSection = () => {
             </div>
             <h3 className="font-display text-xl text-cream-light mb-2">Contacto</h3>
             <p className="font-body text-sm text-cream-light/60 leading-relaxed">
-              <a href="https://www.instagram.com/casa.superi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-gold-glow transition-colors">
+              <a href="https://www.instagram.com/casa.superi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-olive-light transition-colors">
                 @casa.superi
               </a>
               <br />

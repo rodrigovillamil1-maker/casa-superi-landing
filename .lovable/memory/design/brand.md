@@ -3,19 +3,22 @@ name: Casa Superi brand identity
 description: Logo colors, typography, warm palette, Instagram @casa.superi
 type: design
 ---
-## Typography
-- **Headings**: Bebas Neue (bold condensed sans-serif, uppercase) — inspired by Kelly Wearstler editorial style
-- **Accent/Italic**: Playfair Display (elegant serif for italic accent phrases)
-- **Body**: DM Sans (clean, modern sans-serif)
+## Typography System
+- **Hero titles**: Bebas Neue (condensed sans-serif, uppercase, black weight) — big impact
+- **Logo/Serif headings**: Cormorant Garamond (humanist serif, semibold) — luxury editorial
+- **Accent/Display**: Playfair Display (Didone serif, italic) — elegant emphasis
+- **Navigation**: DM Sans light, ultra-spaced tracking — minimalist
+- **Body/Menus**: DM Sans regular — clean, readable
 
 ## Color Palette
-- Primary/Brand: Mustard/Ochre #C8891B (HSL 38 76% 48%)
-- Background: Warm cream (HSL 40 33% 96%)
-- Foreground: Deep warm brown (HSL 25 20% 15%)
-- Terracotta: HSL 15 55% 50%
-- Dried Green: HSL 150 18% 38%
-- Deep Charcoal: HSL 25 15% 12%
-- Gold Glow: HSL 38 80% 55%
+- Background: Warm cream (HSL 40 20% 97%)
+- Foreground: Near-black (HSL 0 0% 8%)
+- Primary: Matte dark olive green (HSL 150 20% 28%)
+- Deep Charcoal: HSL 0 0% 6%
+- Cream Light: HSL 40 25% 97%
+- Olive Light: HSL 150 12% 40%
+- Warm Gray: HSL 40 5% 55%
+- Direction: B&W + cream base with matte green accent. No mustard/ochre.
 
 ## Tone & References
 - Luxury vintage, Buenos Aires bohemian
