@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Bebas Neue", "Impact", "sans-serif"],
+        serif: ["Cormorant Garamond", "Georgia", "serif"],
         accent: ["Playfair Display", "Georgia", "serif"],
         body: ["DM Sans", "system-ui", "sans-serif"],
       },
@@ -52,12 +53,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "warm-brown": "hsl(var(--warm-brown))",
-        terracotta: "hsl(var(--terracotta))",
-        "dried-green": "hsl(var(--dried-green))",
-        "deep-charcoal": "hsl(var(--deep-charcoal))",
+        "warm-black": "hsl(var(--warm-black))",
         "cream-light": "hsl(var(--cream-light))",
-        "gold-glow": "hsl(var(--gold-glow))",
+        "olive-matte": "hsl(var(--olive-matte))",
+        "olive-light": "hsl(var(--olive-light))",
+        "deep-charcoal": "hsl(var(--deep-charcoal))",
+        "warm-gray": "hsl(var(--warm-gray))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

@@ -34,14 +34,13 @@ const PortfolioSection = () => {
             Piezas únicas
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground">
-            COLECCIÓN <span className="font-accent italic">Curada</span>
+            COLECCIÓN <span className="font-accent italic normal-case">Curada</span>
           </h2>
           <p className="mt-6 font-body text-muted-foreground max-w-lg mx-auto">
             Cada pieza es irrepetible. Cuando se va, no vuelve. Explorá lo que tenemos hoy.
           </p>
         </motion.div>
 
-        {/* Masonry-style grid */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
           {pieces.map((piece, i) => (
             <motion.div
@@ -58,9 +57,9 @@ const PortfolioSection = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-deep-charcoal/0 group-hover:bg-deep-charcoal/40 transition-all duration-500 flex items-end">
+                <div className="absolute inset-0 bg-deep-charcoal/0 group-hover:bg-deep-charcoal/50 transition-all duration-500 flex items-end">
                   <div className="p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    <p className="font-body text-xs tracking-[0.3em] uppercase text-gold-glow">
+                    <p className="font-body text-xs tracking-[0.3em] uppercase text-cream-light/70">
                       {piece.category}
                     </p>
                     <p className="font-display text-xl text-cream-light mt-1">

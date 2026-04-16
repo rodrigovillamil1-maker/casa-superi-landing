@@ -11,7 +11,7 @@ const Footer = () => (
         href="https://www.instagram.com/casa.superi/"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-body text-xs tracking-widest uppercase text-primary hover:text-gold-glow transition-colors"
+        className="font-body text-xs tracking-widest uppercase text-cream-light/50 hover:text-cream-light transition-colors"
       >
         Instagram →
       </a>

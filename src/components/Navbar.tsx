@@ -31,24 +31,23 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <a href="#hero" className="font-display text-2xl tracking-wider text-foreground">
-          CASA SUPERI
+        <a href="#hero" className="font-serif text-xl tracking-wide text-foreground font-semibold">
+          Casa Superi
         </a>
 
-        {/* Desktop nav */}
+        {/* Desktop nav — light sans, spaced */}
         <div className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="font-body text-xs font-light tracking-[0.25em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
               {item.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden flex flex-col gap-1.5"
@@ -60,7 +59,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -72,7 +70,7 @@ const Navbar = () => {
               key={item.href}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-3 font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
+              className="block py-3 font-body text-xs font-light tracking-[0.25em] uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               {item.label}
             </a>
