@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { label: "Inicio", href: "#hero" },
   { label: "Nosotros", href: "#about" },
+  { label: "Proyectos", href: "#projects" },
   { label: "Colección", href: "#portfolio" },
   { label: "Showroom", href: "#showroom" },
   { label: "Contacto", href: "#contact" },
@@ -30,18 +30,22 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <a href="#hero" className="font-serif text-xl tracking-wide text-foreground font-semibold">
-          Casa Superi
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
+        <a href="#hero" className="font-body text-xs font-light tracking-[0.25em] uppercase text-cream-light/80 hover:text-cream-light transition-colors">
+          {scrolled ? "" : ""}
         </a>
 
-        {/* Desktop nav — light sans, spaced */}
-        <div className="hidden md:flex items-center gap-10">
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-10 mx-auto">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="font-body text-xs font-light tracking-[0.25em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
+              className={`font-body text-xs font-light tracking-[0.25em] uppercase transition-colors duration-300 ${
+                scrolled
+                  ? "text-muted-foreground hover:text-foreground"
+                  : "text-cream-light/70 hover:text-cream-light"
+              }`}
             >
               {item.label}
             </a>
@@ -53,9 +57,9 @@ const Navbar = () => {
           className="md:hidden flex flex-col gap-1.5"
           aria-label="Menu"
         >
-          <span className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-cream-light"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-cream-light"} ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-cream-light"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
