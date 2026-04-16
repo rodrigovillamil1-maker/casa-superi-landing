@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import realHallway from "@/assets/real-hallway.jpeg";
+import aboutImage from "@/assets/about-deckchair.jpeg";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -49,16 +49,11 @@ const AboutSection = () => {
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src={realHallway}
-                alt="Interior del showroom Casa Superi - antigua caballeriza restaurada"
+                src={aboutImage}
+                alt="Silla plegable de cuero vintage en el showroom Casa Superi"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-primary px-6 py-4">
-              <p className="font-accent text-lg text-primary-foreground italic">
-                Una antigua caballeriza,<br />un nuevo destino.
-              </p>
             </div>
           </motion.div>
         </div>
