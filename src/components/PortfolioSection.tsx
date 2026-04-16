@@ -33,8 +33,8 @@ const PortfolioSection = () => {
           <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
             Piezas únicas
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground">
-            Colección <span className="italic">Curada</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground">
+            COLECCIÓN <span className="font-accent italic">Curada</span>
           </h2>
           <p className="mt-6 font-body text-muted-foreground max-w-lg mx-auto">
             Cada pieza es irrepetible. Cuando se va, no vuelve. Explorá lo que tenemos hoy.
