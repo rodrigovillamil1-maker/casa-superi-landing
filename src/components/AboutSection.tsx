@@ -26,11 +26,10 @@ const AboutSection = () => {
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>
                 Casa Superi es un espacio dedicado al diseño vintage y a las piezas con historia.
-                Rescatamos muebles, alfombras, lámparas y objetos únicos para darles un nuevo capítulo.
               </p>
               <p>
-                Nuestro showroom está pensado como una casa: ambientes, rincones y escenas que
-                invitan a recorrer, descubrir y encontrar esa pieza que no se busca, aparece.
+                Nuestro showroom está pensado como una casa: ambientes y rincones para recorrer,
+                descubrir y encontrar esa pieza que no se busca, aparece.
               </p>
             </div>
           </motion.div>
