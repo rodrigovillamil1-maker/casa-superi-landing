@@ -47,7 +47,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="font-logo text-6xl md:text-8xl lg:text-9xl tracking-[0.15em] text-cream-light font-bold uppercase"
+          className="font-logo text-6xl md:text-8xl lg:text-9xl tracking-[-0.02em] text-cream-light font-bold uppercase"
         >
           CASA SUPERI
         </motion.h1>
