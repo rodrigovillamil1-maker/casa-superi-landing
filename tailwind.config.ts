@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        logo: ["Oswald", "Impact", "sans-serif"],
         display: ["Bebas Neue", "Impact", "sans-serif"],
         serif: ["Cormorant Garamond", "Georgia", "serif"],
         accent: ["Playfair Display", "Georgia", "serif"],
