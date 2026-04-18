@@ -5,6 +5,8 @@ const navItems = [
   { label: "Nosotros", href: "#about" },
   { label: "Proyectos", href: "#projects" },
   { label: "Colección", href: "#portfolio" },
+  { label: "Vender", href: "#vender" },
+  { label: "Partnerships", href: "#partnerships" },
   { label: "Showroom", href: "#showroom" },
   { label: "Contacto", href: "#contact" },
 ];
