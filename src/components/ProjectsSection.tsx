@@ -2,36 +2,40 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import realGrid from "@/assets/real-grid.jpeg";
 import showroomShooting from "@/assets/showroom-shooting.jpg";
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import ambientacionWassily from "@/assets/ambientacion-wassily.jpeg";
+import sillonGris from "@/assets/sillon-gris-rincon.jpeg";
+import tapizBosque from "@/assets/tapiz-bosque.jpeg";
 
 const projects = [
   {
     title: "Showroom Casa Superi",
     subtitle: "La caballeriza restaurada",
-    description: "500m² de ambientes curados en una antigua caballeriza de Buenos Aires, reconstruida pieza por pieza.",
+    description:
+      "500m² de ambientes curados en una antigua caballeriza de Buenos Aires, reconstruida pieza por pieza.",
     image: realGrid,
     tags: ["Restauración", "Interiorismo", "Showroom"],
   },
   {
     title: "Producciones Fotográficas",
     subtitle: "Locación para shootings",
-    description: "Escenarios únicos para moda, catálogos y contenido audiovisual. Techos altos, luz natural y atmósfera irrepetible.",
+    description:
+      "Escenarios únicos para moda, catálogos y contenido audiovisual. Techos altos, luz natural y atmósfera irrepetible.",
     image: showroomShooting,
     tags: ["Fotografía", "Moda", "Locación"],
   },
   {
     title: "Curaduría de Piezas",
     subtitle: "Rescate y selección",
-    description: "Recorremos casas antiguas, mercados de época y lugares olvidados para encontrar muebles, arte y objetos con historia.",
-    image: portfolio1,
+    description:
+      "Recorremos casas antiguas, mercados de época y lugares olvidados para encontrar muebles, arte y objetos con historia.",
+    image: tapizBosque,
     tags: ["Vintage", "Arte", "Mobiliario"],
   },
   {
     title: "Ambientaciones",
     subtitle: "Espacios con alma",
-    description: "Diseñamos escenas que cuentan historias — del living clásico al rincón bohemio, cada ambiente tiene personalidad propia.",
-    image: ambientacionWassily,
+    description:
+      "Diseñamos escenas que cuentan historias — del living clásico al rincón bohemio, cada ambiente tiene personalidad propia.",
+    image: sillonGris,
     tags: ["Diseño", "Ambientación", "Estilo"],
   },
 ];
@@ -54,7 +58,7 @@ const ProjectsSection = () => {
             Lo que hacemos
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground">
-            PROYECTOS
+            Proyectos
           </h2>
         </motion.div>
 
@@ -65,9 +69,7 @@ const ProjectsSection = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: i * 0.15 }}
-              className={`grid md:grid-cols-2 gap-12 lg:gap-20 items-center ${
-                i % 2 === 1 ? "md:direction-rtl" : ""
-              }`}
+              className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center"
             >
               <div className={i % 2 === 1 ? "md:order-2" : ""}>
                 <div className="aspect-[4/3] overflow-hidden">
