@@ -4,16 +4,26 @@ import real1 from "@/assets/real-1.jpeg";
 import real2 from "@/assets/real-2.jpeg";
 import realGrid from "@/assets/real-grid.jpeg";
 import realHallway from "@/assets/real-hallway.jpeg";
-import tapizBosque from "@/assets/tapiz-bosque.jpeg";
-import tapizAbstracto from "@/assets/tapiz-abstracto.jpeg";
-import sillonGris from "@/assets/sillon-gris-rincon.jpeg";
+import kilimFloral from "@/assets/showroom-kilim-floral.jpeg.asset.json";
+import kilimRojo from "@/assets/showroom-kilim-rojo.jpeg.asset.json";
+import sillonesCrema from "@/assets/showroom-sillones-crema.jpeg.asset.json";
+import alfombraGeo from "@/assets/showroom-alfombra-geometrica.jpeg.asset.json";
+import livingKilims from "@/assets/showroom-living-kilims.jpeg.asset.json";
+import sillasPared from "@/assets/showroom-sillas-pared.jpeg.asset.json";
+import tapizBronce from "@/assets/showroom-tapiz-bronce.jpeg.asset.json";
+import sofaGeo from "@/assets/showroom-sofa-geometrico.jpeg.asset.json";
 
 const pieces = [
-  { src: tapizBosque, title: "Tapiz Bosque Otoñal", category: "Arte textil" },
+  { src: kilimFloral.url, title: "Kilim Floral con Sillones", category: "Ambiente" },
+  { src: sillonesCrema.url, title: "Sillones Crema y Kilims", category: "Living" },
+  { src: kilimRojo.url, title: "Kilim Rojo y Verde", category: "Textil" },
+  { src: livingKilims.url, title: "Pared de Tapices", category: "Curaduría" },
+  { src: alfombraGeo.url, title: "Alfombra Geométrica y Deck Chair", category: "Ambiente" },
+  { src: sillasPared.url, title: "Comedor con Sillas en Pared", category: "Comedor" },
+  { src: tapizBronce.url, title: "Tapiz Bronce y Sofá Vintage", category: "Living" },
+  { src: sofaGeo.url, title: "Sofá Geométrico", category: "Mobiliario" },
   { src: real1, title: "Sillones Mid-Century", category: "Mobiliario" },
-  { src: tapizAbstracto, title: "Tapiz Abstracto", category: "Arte textil" },
   { src: realHallway, title: "Pasillo Curado", category: "Ambientes" },
-  { src: sillonGris, title: "Rincón Escandinavo", category: "Ambientes" },
   { src: real2, title: "Living con Bovedilla", category: "Ambientes" },
   { src: realGrid, title: "Showroom Caballeriza", category: "Espacio" },
 ];
