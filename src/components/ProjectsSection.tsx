@@ -1,9 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import realGrid from "@/assets/real-grid.jpeg";
-import showroomShooting from "@/assets/showroom-shooting.jpg";
-import sillonGris from "@/assets/sillon-gris-rincon.jpeg";
-import tapizBosque from "@/assets/tapiz-bosque.jpeg";
 
 const projects = [
   {
@@ -19,7 +16,8 @@ const projects = [
     subtitle: "Locación para shootings",
     description:
       "Escenarios únicos para moda, catálogos y contenido audiovisual. Techos altos, luz natural y atmósfera irrepetible.",
-    image: showroomShooting,
+    image:
+      "https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/v1788487574/IMG_6064",
     tags: ["Fotografía", "Moda", "Locación"],
   },
   {
@@ -27,7 +25,8 @@ const projects = [
     subtitle: "Rescate y selección",
     description:
       "Recorremos casas antiguas, mercados de época y lugares olvidados para encontrar muebles, arte y objetos con historia.",
-    image: tapizBosque,
+    image:
+      "https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/v1788487566/IMG_2614",
     tags: ["Vintage", "Arte", "Mobiliario"],
   },
   {
@@ -35,7 +34,8 @@ const projects = [
     subtitle: "Espacios con alma",
     description:
       "Diseñamos escenas que cuentan historias — del living clásico al rincón bohemio, cada ambiente tiene personalidad propia.",
-    image: sillonGris,
+    image:
+      "https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/v1788487578/IMG_6437",
     tags: ["Diseño", "Ambientación", "Estilo"],
   },
 ];
@@ -62,49 +62,53 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="space-y-24 md:space-y-32">
-          {projects.map((project, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: i * 0.15 }}
-              className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center"
-            >
-              <div className={i % 2 === 1 ? "md:order-2" : ""}>
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+        <div className="space-y-8 md:space-y-10">
+          {projects.map((project, i) => {
+            const alignRight = i % 2 === 1;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.8, delay: i * 0.15 }}
+                className="group relative aspect-[16/10] md:aspect-[21/9] overflow-hidden"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-deep-charcoal/10 to-transparent" />
 
-              <div className={i % 2 === 1 ? "md:order-1" : ""}>
-                <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-2">
-                  {project.subtitle}
-                </p>
-                <h3 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-                  {project.title}
-                </h3>
-                <p className="font-body text-muted-foreground leading-relaxed mb-6">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="font-body text-xs tracking-wider uppercase px-3 py-1 border border-border text-muted-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div
+                  className={`relative z-10 h-full flex flex-col justify-end p-8 md:p-12 ${
+                    alignRight ? "items-end text-right" : "items-start text-left"
+                  }`}
+                >
+                  <p className="font-body text-xs tracking-[0.3em] uppercase text-cream-light/70 mb-2">
+                    {project.subtitle}
+                  </p>
+                  <h3 className="font-display text-3xl md:text-5xl text-cream-light mb-4 max-w-xl">
+                    {project.title}
+                  </h3>
+                  <p className="font-body text-cream-light/80 leading-relaxed mb-6 max-w-md">
+                    {project.description}
+                  </p>
+                  <div className={`flex flex-wrap gap-2 ${alignRight ? "justify-end" : "justify-start"}`}>
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="font-body text-xs tracking-wider uppercase px-3 py-1 border border-cream-light/40 text-cream-light/90"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

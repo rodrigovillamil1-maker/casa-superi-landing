@@ -15,9 +15,9 @@ export default {
     extend: {
       fontFamily: {
         logo: ["Oswald", "Impact", "sans-serif"],
-        display: ["Bebas Neue", "Impact", "sans-serif"],
+        display: ["Cormorant Garamond", "Georgia", "serif"],
         serif: ["Cormorant Garamond", "Georgia", "serif"],
-        accent: ["Playfair Display", "Georgia", "serif"],
+        accent: ["Cormorant Garamond", "Georgia", "serif"],
         body: ["DM Sans", "system-ui", "sans-serif"],
       },
       colors: {

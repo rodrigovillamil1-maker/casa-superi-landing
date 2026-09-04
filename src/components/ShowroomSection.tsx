@@ -53,20 +53,13 @@ const ShowroomSection = () => {
               </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-6">
-              {[
-                { number: "500+", label: "m² de showroom" },
-                { number: "12", label: "ambientes únicos" },
-                { number: "∞", label: "posibilidades" },
-                { number: "1", label: "lugar como este" },
-              ].map((stat, i) => (
-                <div key={i} className="border-t border-primary/30 pt-4">
-                  <p className="font-display text-3xl text-primary">{stat.number}</p>
-                  <p className="font-body text-xs tracking-widest uppercase text-muted-foreground mt-1">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
+            <div className="mt-10">
+              <div className="inline-block border-t border-primary/30 pt-4">
+                <p className="font-display text-3xl text-primary">12</p>
+                <p className="font-body text-xs tracking-widest uppercase text-muted-foreground mt-1">
+                  ambientes únicos
+                </p>
+              </div>
             </div>
 
             <a

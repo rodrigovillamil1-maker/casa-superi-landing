@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -47,9 +47,9 @@
     --warm-gray: 40 5% 55%;
 
     --font-logo: 'Oswald', 'Impact', sans-serif;
-    --font-display: 'Bebas Neue', 'Impact', sans-serif;
+    --font-display: 'Cormorant Garamond', 'Georgia', serif;
     --font-serif: 'Cormorant Garamond', 'Georgia', serif;
-    --font-accent: 'Playfair Display', 'Georgia', serif;
+    --font-accent: 'Cormorant Garamond', 'Georgia', serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
@@ -75,12 +75,17 @@
 
   h1, h2, h3 {
     font-family: var(--font-display);
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }
 
   h4, h5, h6 {
     font-family: var(--font-serif);
+  }
+
+  .font-accent {
+    font-weight: 500;
   }
 }
 

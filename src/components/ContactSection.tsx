@@ -53,7 +53,7 @@ const ContactSection = () => {
             </div>
             <h3 className="font-display text-xl text-cream-light mb-2">Horarios</h3>
             <p className="font-body text-sm text-cream-light/60 leading-relaxed">
-              Lunes a Viernes: 10 – 18hs<br />
+              Lunes a Viernes: con cita previa<br />
               Sábados: con cita previa
             </p>
           </div>
@@ -61,16 +61,23 @@ const ContactSection = () => {
           <div>
             <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--primary))" strokeWidth="1.5">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2z" />
+                <circle cx="12" cy="12" r="4.25" />
+                <circle cx="17.25" cy="6.75" r="0.75" fill="hsl(var(--primary))" />
               </svg>
             </div>
             <h3 className="font-display text-xl text-cream-light mb-2">Contacto</h3>
             <p className="font-body text-sm text-cream-light/60 leading-relaxed">
-              <a href="https://www.instagram.com/casa.superi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-olive-light transition-colors">
+              <a
+                href="https://instagram.com/casa.superi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-olive-light transition-colors"
+              >
                 @casa.superi
               </a>
               <br />
-              Instagram & WhatsApp
+              Instagram
             </p>
           </div>
         </motion.div>

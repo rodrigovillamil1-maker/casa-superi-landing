@@ -1,31 +1,21 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import real1 from "@/assets/real-1.jpeg";
-import real2 from "@/assets/real-2.jpeg";
-import realGrid from "@/assets/real-grid.jpeg";
-import realHallway from "@/assets/real-hallway.jpeg";
-import kilimFloral from "@/assets/showroom-kilim-floral.jpeg.asset.json";
-import kilimRojo from "@/assets/showroom-kilim-rojo.jpeg.asset.json";
-import sillonesCrema from "@/assets/showroom-sillones-crema.jpeg.asset.json";
-import alfombraGeo from "@/assets/showroom-alfombra-geometrica.jpeg.asset.json";
-import livingKilims from "@/assets/showroom-living-kilims.jpeg.asset.json";
-import sillasPared from "@/assets/showroom-sillas-pared.jpeg.asset.json";
-import tapizBronce from "@/assets/showroom-tapiz-bronce.jpeg.asset.json";
-import sofaGeo from "@/assets/showroom-sofa-geometrico.jpeg.asset.json";
+
+const cld = (id: string) =>
+  `https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/${id}`;
 
 const pieces = [
-  { src: kilimFloral.url, title: "Kilim Floral con Sillones", category: "Ambiente" },
-  { src: sillonesCrema.url, title: "Sillones Crema y Kilims", category: "Living" },
-  { src: kilimRojo.url, title: "Kilim Rojo y Verde", category: "Textil" },
-  { src: livingKilims.url, title: "Pared de Tapices", category: "Curaduría" },
-  { src: alfombraGeo.url, title: "Alfombra Geométrica y Deck Chair", category: "Ambiente" },
-  { src: sillasPared.url, title: "Comedor con Sillas en Pared", category: "Comedor" },
-  { src: tapizBronce.url, title: "Tapiz Bronce y Sofá Vintage", category: "Living" },
-  { src: sofaGeo.url, title: "Sofá Geométrico", category: "Mobiliario" },
-  { src: real1, title: "Sillones Mid-Century", category: "Mobiliario" },
-  { src: realHallway, title: "Pasillo Curado", category: "Ambientes" },
-  { src: real2, title: "Living con Bovedilla", category: "Ambientes" },
-  { src: realGrid, title: "Showroom Caballeriza", category: "Espacio" },
+  { src: cld("v1788487469/IMG_2599"), title: "Kilim Floral con Sillones", category: "Ambiente" },
+  { src: cld("v1788487570/IMG_2648"), title: "Sillones Crema y Kilims", category: "Living" },
+  { src: cld("v1788487576/IMG_2685"), title: "Kilim Rojo y Verde", category: "Textil" },
+  { src: cld("v1788487575/IMG_2758"), title: "Pared de Tapices", category: "Curaduría" },
+  { src: cld("v1788487566/IMG_6059"), title: "Alfombra Geométrica y Deck Chair", category: "Ambiente" },
+  { src: cld("v1788487573/IMG_6118"), title: "Comedor con Sillas en Pared", category: "Comedor" },
+  { src: cld("v1788487577/IMG_6140"), title: "Tapiz Bronce y Sofá Vintage", category: "Living" },
+  { src: cld("v1788487558/IMG_6171"), title: "Sofá Geométrico", category: "Mobiliario" },
+  { src: cld("v1788487558/IMG_6228"), title: "Sillones Mid-Century", category: "Mobiliario" },
+  { src: cld("v1788487564/IMG_6236"), title: "Pasillo Curado", category: "Ambientes" },
+  { src: cld("v1788487572/IMG_6352"), title: "Living con Bovedilla", category: "Ambientes" },
 ];
 
 const PortfolioSection = () => {
