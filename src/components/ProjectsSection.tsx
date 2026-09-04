@@ -18,7 +18,6 @@ const projects = [
       cld("v1788565279/IMG_6122"),
       cld("v1788565277/IMG_6418"),
       cld("v1788565272/IMG_6265"),
-      cld("v1788565272/IMG_6364"),
     ],
     tags: ["Restauración", "Interiorismo", "Showroom"],
   },
@@ -85,16 +84,29 @@ const ProjectsSection = () => {
                 className="group relative aspect-[16/10] md:aspect-[21/9] overflow-hidden"
               >
                 {"images" in project ? (
-                  <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 gap-0.5">
-                    {project.images.map((src, idx) => (
-                      <img
-                        key={idx}
-                        src={src}
-                        alt={`${project.title} ${idx + 1}`}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    ))}
+                  <div className="absolute inset-0 flex flex-col gap-0.5">
+                    <div className="flex-1 grid grid-cols-4 gap-0.5">
+                      {project.images.slice(0, 4).map((src, idx) => (
+                        <img
+                          key={idx}
+                          src={src}
+                          alt={`${project.title} ${idx + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                    <div className="flex-1 grid grid-cols-3 gap-0.5">
+                      {project.images.slice(4).map((src, idx) => (
+                        <img
+                          key={idx + 4}
+                          src={src}
+                          alt={`${project.title} ${idx + 5}`}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
                   </div>
                 ) : (
                   <img
