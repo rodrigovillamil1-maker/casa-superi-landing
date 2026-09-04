@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import showroomImage from "@/assets/showroom-shooting.jpg";
+
+const showroomImage =
+  "https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/v1788565272/IMG_6364";
 
 const ShowroomSection = () => {
   const ref = useRef(null);

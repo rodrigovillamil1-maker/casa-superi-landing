@@ -16,6 +16,7 @@ const pieces = [
   { src: cld("v1788487558/IMG_6228"), title: "Sillones Mid-Century", category: "Mobiliario" },
   { src: cld("v1788487564/IMG_6236"), title: "Pasillo Curado", category: "Ambientes" },
   { src: cld("v1788487572/IMG_6352"), title: "Living con Bovedilla", category: "Ambientes" },
+  { src: cld("v1788565303/IMG_6145"), title: "Rincón Curado", category: "Ambiente" },
 ];
 
 const PortfolioSection = () => {

@@ -1,28 +1,27 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import tapizBosque from "@/assets/tapiz-bosque.jpeg";
-import tapizAbstracto from "@/assets/tapiz-abstracto.jpeg";
-import sillonGris from "@/assets/sillon-gris-rincon.jpeg";
-import realHallway from "@/assets/real-hallway.jpeg";
+
+const cld = (id: string) =>
+  `https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/${id}`;
 
 const collaborations = [
   {
-    image: tapizBosque,
+    image: cld("v1788565306/IMG_6317"),
     client: "Marcas de moda",
     project: "Locación para editoriales y campañas",
   },
   {
-    image: realHallway,
+    image: cld("v1788565307/IMG_6427"),
     client: "Estudios de interiorismo",
     project: "Curaduría y abastecimiento de piezas",
   },
   {
-    image: sillonGris,
+    image: cld("v1788565313/IMG_6408"),
     client: "Productoras audiovisuales",
     project: "Ambientación de escenas y sets",
   },
   {
-    image: tapizAbstracto,
+    image: cld("v1788565311/IMG_6229"),
     client: "Galerías y coleccionistas",
     project: "Selección de obra y mobiliario único",
   },

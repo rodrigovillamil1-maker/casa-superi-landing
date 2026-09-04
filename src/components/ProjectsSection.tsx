@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import realGrid from "@/assets/real-grid.jpeg";
+
+const cld = (id: string) =>
+  `https://res.cloudinary.com/lfwzb5kp/image/upload/f_auto,q_auto/${id}`;
 
 const projects = [
   {
@@ -8,7 +10,16 @@ const projects = [
     subtitle: "La caballeriza restaurada",
     description:
       "500m² de ambientes curados en una antigua caballeriza de Buenos Aires, reconstruida pieza por pieza.",
-    image: realGrid,
+    images: [
+      cld("v1788565272/IMG_6190"),
+      cld("v1788565312/IMG_6261"),
+      cld("v1788565304/IMG_6384"),
+      cld("v1788565303/IMG_6153"),
+      cld("v1788565279/IMG_6122"),
+      cld("v1788565277/IMG_6418"),
+      cld("v1788565272/IMG_6265"),
+      cld("v1788565272/IMG_6364"),
+    ],
     tags: ["Restauración", "Interiorismo", "Showroom"],
   },
   {
@@ -73,12 +84,26 @@ const ProjectsSection = () => {
                 transition={{ duration: 0.8, delay: i * 0.15 }}
                 className="group relative aspect-[16/10] md:aspect-[21/9] overflow-hidden"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
+                {"images" in project ? (
+                  <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 gap-0.5">
+                    {project.images.map((src, idx) => (
+                      <img
+                        key={idx}
+                        src={src}
+                        alt={`${project.title} ${idx + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-deep-charcoal/10 to-transparent" />
 
                 <div
