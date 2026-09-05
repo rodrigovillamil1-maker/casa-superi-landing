@@ -62,7 +62,7 @@ const PartnershipsSection = () => {
               transition={{ duration: 0.7, delay: i * 0.12 }}
               className="group cursor-pointer"
             >
-              <div className="aspect-[4/3] overflow-hidden mb-5">
+              <div className="h-[500px] md:h-[600px] overflow-hidden mb-5">
                 <img
                   src={c.image}
                   alt={c.client}

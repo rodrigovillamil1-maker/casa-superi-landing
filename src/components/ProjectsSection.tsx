@@ -56,13 +56,12 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-24 md:py-36 bg-card">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-20">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-20"
         >
           <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
             Lo que hacemos
@@ -71,82 +70,82 @@ const ProjectsSection = () => {
             Proyectos
           </h2>
         </motion.div>
+      </div>
 
-        <div className="space-y-8 md:space-y-10">
-          {projects.map((project, i) => {
-            const alignRight = i % 2 === 1;
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: i * 0.15 }}
-                className="group relative aspect-[16/10] md:aspect-[21/9] overflow-hidden"
-              >
-                {"images" in project ? (
-                  <div className="absolute inset-0 flex flex-col gap-0.5">
-                    <div className="flex-1 grid grid-cols-4 gap-0.5">
-                      {project.images.slice(0, 4).map((src, idx) => (
-                        <img
-                          key={idx}
-                          src={src}
-                          alt={`${project.title} ${idx + 1}`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          loading="lazy"
-                        />
-                      ))}
-                    </div>
-                    <div className="flex-1 grid grid-cols-3 gap-0.5">
-                      {project.images.slice(4).map((src, idx) => (
-                        <img
-                          key={idx + 4}
-                          src={src}
-                          alt={`${project.title} ${idx + 5}`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          loading="lazy"
-                        />
-                      ))}
-                    </div>
+      <div className="space-y-8 md:space-y-10">
+        {projects.map((project, i) => {
+          const alignRight = i % 2 === 1;
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: i * 0.15 }}
+              className="group relative aspect-[16/10] md:aspect-[21/9] overflow-hidden"
+            >
+              {"images" in project ? (
+                <div className="absolute inset-0 flex flex-col gap-0.5">
+                  <div className="flex-1 grid grid-cols-4 gap-0.5">
+                    {project.images.slice(0, 4).map((src, idx) => (
+                      <img
+                        key={idx}
+                        src={src}
+                        alt={`${project.title} ${idx + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ))}
                   </div>
-                ) : (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-deep-charcoal/10 to-transparent" />
-
-                <div
-                  className={`relative z-10 h-full flex flex-col justify-end p-8 md:p-12 ${
-                    alignRight ? "items-end text-right" : "items-start text-left"
-                  }`}
-                >
-                  <p className="font-body text-xs tracking-[0.3em] uppercase text-cream-light/70 mb-2">
-                    {project.subtitle}
-                  </p>
-                  <h3 className="font-display text-3xl md:text-5xl text-cream-light mb-4 max-w-xl">
-                    {project.title}
-                  </h3>
-                  <p className="font-body text-cream-light/80 leading-relaxed mb-6 max-w-md">
-                    {project.description}
-                  </p>
-                  <div className={`flex flex-wrap gap-2 ${alignRight ? "justify-end" : "justify-start"}`}>
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-body text-xs tracking-wider uppercase px-3 py-1 border border-cream-light/40 text-cream-light/90"
-                      >
-                        {tag}
-                      </span>
+                  <div className="flex-1 grid grid-cols-3 gap-0.5">
+                    {project.images.slice(4).map((src, idx) => (
+                      <img
+                        key={idx + 4}
+                        src={src}
+                        alt={`${project.title} ${idx + 5}`}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
                     ))}
                   </div>
                 </div>
-              </motion.div>
-            );
-          })}
-        </div>
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-deep-charcoal/10 to-transparent" />
+
+              <div
+                className={`relative z-10 h-full flex flex-col justify-end p-8 md:p-12 ${
+                  alignRight ? "items-end text-right" : "items-start text-left"
+                }`}
+              >
+                <p className="font-body text-xs tracking-[0.3em] uppercase text-cream-light/70 mb-2">
+                  {project.subtitle}
+                </p>
+                <h3 className="font-display text-3xl md:text-5xl text-cream-light mb-4 max-w-xl">
+                  {project.title}
+                </h3>
+                <p className="font-body text-cream-light/80 leading-relaxed mb-6 max-w-md">
+                  {project.description}
+                </p>
+                <div className={`flex flex-wrap gap-2 ${alignRight ? "justify-end" : "justify-start"}`}>
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="font-body text-xs tracking-wider uppercase px-3 py-1 border border-cream-light/40 text-cream-light/90"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );

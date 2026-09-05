@@ -39,9 +39,10 @@ const ShowroomSection = () => {
             <p className="font-body text-xs tracking-[0.4em] uppercase text-primary mb-4">
               Locación
             </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
-              TU PRÓXIMA<br />
-              <span className="font-accent italic text-primary normal-case">producción</span>
+            <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
+              <span style={{ color: "#8B1A1A" }}>TU PRÓXIMA</span>
+              <br />
+              <span style={{ color: "#C8860A" }}>producción</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-body text-base leading-relaxed">
               <p>

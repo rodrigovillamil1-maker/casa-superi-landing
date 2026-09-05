@@ -61,16 +61,6 @@ const PortfolioSection = () => {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-deep-charcoal/0 group-hover:bg-deep-charcoal/60 transition-all duration-500 flex items-end">
-              <div className="p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                <p className="font-body text-[10px] tracking-[0.3em] uppercase text-cream-light/70">
-                  {piece.category}
-                </p>
-                <p className="font-display text-lg md:text-xl text-cream-light mt-1">
-                  {piece.title}
-                </p>
-              </div>
-            </div>
           </motion.div>
         ))}
       </div>
